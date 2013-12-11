@@ -28,7 +28,6 @@
 @protocol InfiniteScrollViewDataSource <NSObject>
 
 -(InfiniteScrollViewCell*)infiniteScrollView:(InfiniteScrollView*)scrollView cellForIndex:(int)index;
--(void)previousIndex:(int)prevIndex changedToIndex:(int)newIndex;
 
 @end
 
