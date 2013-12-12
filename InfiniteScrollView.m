@@ -132,7 +132,7 @@
 {
    [visibleCells removeObject:cell];
    [cachedCells[cell.identifier] addObject:cell];
-   //move it out of the window
+   //move it out of the window, removeFromSuperview is pretty slow
    if (self.orientation == InfiniteScrollViewOrientationVertical) {
       cell.frame = CGRectMake(cell.frame.origin.x, -cell.frame.size.height, cell.frame.size.width, cell.frame.size.height);
    } else {
