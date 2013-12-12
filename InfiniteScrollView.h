@@ -22,6 +22,10 @@
 
 @protocol InfiniteScrollViewDelegate <NSObject>
 
+@optional
+
+-(void)infiniteScrollViewDidScroll:(InfiniteScrollView*)scrollView;
+
 @end
 
 
@@ -51,5 +55,7 @@ enum InfiniteScrollViewOrientation {
 -(int)lastVisibleIndex;
 
 -(NSArray*)visibleCells;
+
+-(CGPoint)contentOffset;
 
 @end
