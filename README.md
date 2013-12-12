@@ -1,7 +1,7 @@
 InfiniteScrollView
 ==================
 
-UITableView-like infinite scroll view for iOS. Supports horizontal and vertical orientation.
+UITableView-like infinite scroll view for iOS. Supports horizontal and vertical orientation. It's pretty fast.
 
 Use
 ===
